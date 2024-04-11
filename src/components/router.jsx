@@ -5,6 +5,7 @@ import Apropos from '../pages/apropos'
 import Fichelogement from '../pages/fichelogement'
 import Erreur from '../pages/erreur'
 import Header from './header'
+import Footer from './footer'
 
 
 function Router() {
@@ -18,7 +19,8 @@ function Router() {
                     <Route path="/fichelogement" element={<Fichelogement />} />
                     <Route path="/erreur" element={<Erreur />} />                   
                 </Routes>
-               
+                
+            <Footer/>   
             
         </BrowserRouter>
     )
