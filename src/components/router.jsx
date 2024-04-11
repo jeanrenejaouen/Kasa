@@ -4,19 +4,22 @@ import Accueil from '../pages/accueil'
 import Apropos from '../pages/apropos'
 import Fichelogement from '../pages/fichelogement'
 import Erreur from '../pages/erreur'
+import Header from './header'
 
 
 function Router() {
     return (
         <BrowserRouter>
-          
+            <Header/>
+            
                 <Routes>
                     <Route path="/" element={<Accueil />} />
                     <Route path="/apropos" element={<Apropos />} />
                     <Route path="/fichelogement" element={<Fichelogement />} />
                     <Route path="/erreur" element={<Erreur />} />                   
                 </Routes>
-          
+               
+            
         </BrowserRouter>
     )
 }
