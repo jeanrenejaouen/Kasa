@@ -5,8 +5,9 @@ function Card ({image, title}) {
     return (
         // retourner une carte avec image, titre et superposition
         <div className="card">
-            <img src={image} alt={title}/>           
-            <p>{title}</p>
+            <img className="card-Img" src={image} alt={title}/>  
+            <div className="card-Rectangle2"></div>
+            <p className="card-Title">{title}</p>         
         </div>
     )
 }
