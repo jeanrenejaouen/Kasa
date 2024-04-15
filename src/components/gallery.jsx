@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import Logements from '../data/fiches-logement.json'
 import Card from './card'
 import '../style.css'
@@ -13,7 +14,9 @@ function Gallery() {
             {Logements.map((logement) => {
                return (
                     <article key={logement.id}>
-                        <Card image={logement.cover} title={logement.title} />
+                        <NavLink to="/fichelogement">
+                            <Card image={logement.cover} title={logement.title} />
+                        </NavLink>
                     </article>
                );                             
         
