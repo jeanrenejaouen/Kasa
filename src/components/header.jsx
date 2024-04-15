@@ -1,6 +1,6 @@
 import React from 'react'
 // NavLink est similaire à Link, mais avec la possibilité d'ajouter des attributs de style supplémentaires à l'élément
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import logokasa from '../assets/images/LogoKasa.jpg'
 import '../style.css'
 
@@ -15,10 +15,10 @@ function Header() {
         <nav>
           <ul className="nav">
             <li>
-              <Link to="/">Accueil</Link>
+              <NavLink to="/">Accueil</NavLink>
             </li>
             <li>
-              <Link to="/apropos">A propos</Link>
+              <NavLink to="/apropos">A propos</NavLink>
             </li>
           </ul>
         </nav>

@@ -43,7 +43,7 @@ main {
   cursor: pointer;
 }
 .header .nav .active {
-  border-bottom: 1px solid #ff6060;
+  border-bottom: 1px solid #000000;
 }
 
 .footer {
