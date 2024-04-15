@@ -7,7 +7,6 @@ import Erreur from '../pages/erreur'
 import Header from './header'
 import Footer from './footer'
 
-
 function Router() {
     return (
         <BrowserRouter>
@@ -20,8 +19,7 @@ function Router() {
                     <Route path="/erreur" element={<Erreur />} />                   
                 </Routes>
             </main>
-            <Footer/>   
-            
+            <Footer/>            
         </BrowserRouter>
     )
 }

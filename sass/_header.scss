@@ -1,0 +1,25 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 100px;
+	img {
+		height: 68px;
+	}
+	.nav {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		gap: 50px;
+		a {
+			text-decoration: none;			
+			color: #000000;
+			font-size: 24px;
+			cursor: pointer;
+		}
+		.active {
+			border-bottom: 1px solid #000000;
+		}
+	}
+}
