@@ -11,16 +11,15 @@ function Gallery() {
     //Le composant "Carte" est appelé avec 2 paramètres (une image et un titre)
     return (
         <div className="gallery">
-            {Logements.map((logement) => {
-               return (
+            {Logements.map((logement) => (
+               
                     <article key={logement.id}>
-                        <NavLink to="/fichelogement">
+                        <NavLink to={`/fichelogement/${logement.id}`}>
                             <Card image={logement.cover} title={logement.title} />
                         </NavLink>
-                    </article>
-               );                             
+                    </article>                                            
         
-            })}
+            ))}
 
         </div>
     );
