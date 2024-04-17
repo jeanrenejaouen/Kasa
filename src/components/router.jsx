@@ -16,6 +16,7 @@ function Router() {
                     <Route path="/" element={<Accueil />} />
                     <Route path="/apropos" element={<Apropos />} />
                     <Route path="/fichelogement/:id" element={<Fichelogement />} />
+                    {/* Si url différent des trois premiers, Affichage page "erreur" */}
                     <Route path="*" element={<Erreur />} />                   
                 </Routes>
             </main>
