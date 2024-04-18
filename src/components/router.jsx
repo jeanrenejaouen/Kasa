@@ -4,8 +4,8 @@ import Accueil from '../pages/accueil'
 import Apropos from '../pages/apropos'
 import Fichelogement from '../pages/fichelogement'
 import Erreur from '../pages/erreur'
-import Header from './header'
-import Footer from './footer'
+import Header from './header/header'
+import Footer from './footer/footer'
 
 function Router() {
     return (

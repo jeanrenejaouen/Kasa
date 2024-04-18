@@ -1,8 +1,8 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-import Logements from '../data/fiches-logement.json'
-import Card from './card'
-import '../style.css'
+import Logements from '../../data/fiches-logement.json'
+import Card from '../card/card'
+import '../../style.css'
 
 function Gallery() {
     //afficher une galerie avec tous les appartements provenant de la base de données JSON
