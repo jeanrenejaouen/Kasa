@@ -1,0 +1,13 @@
+.aproposDescription {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-block: 10px 38px;
+	justify-content: center;
+	align-items: center;
+	padding-inline: 100px;
+	animation: fadein 2s;
+	.aproposDropdown {
+		width: 100%;
+	}
+}
