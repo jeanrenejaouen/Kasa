@@ -7,7 +7,7 @@ function Collapse(props) { /* arguments obtenus des composants parents */
 /* configurez la variable d'état "isExpanded" pour enregistrer si le collapse est développé ou non */
     const [isExpanded, setIsExpanded] = useState(false);
 
-/* fonction inversant l'état de la variable "isExpanded" lorsque l'on clique sur le titre du collapse*/
+/* fonction inversant l'état de la variable "isExpanded" lorsque l'on clique sur la flèche du collapse*/
     const toggleIsExpanded = () => {
     setIsExpanded((isExpanded) => !isExpanded);
     }
@@ -26,7 +26,7 @@ function Collapse(props) { /* arguments obtenus des composants parents */
     }, []);
 
     return (
-    /* événement onClick sur le <div> "collapseTitle" pour appeler la fonction "toggleIsExpanded" après chaque clic */
+    /* événement onClick sur la flèche "arrowBack" pour appeler la fonction "toggleIsExpanded" après chaque clic */
     /* la rotation de la flèche (chevron) est appliquée en fonction de la valeur "isExpanded" */
     /* attribut de style en ligne utilisé pour attribuer la hauteur */
        
