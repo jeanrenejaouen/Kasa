@@ -2,12 +2,12 @@ import React from 'react';
 import '../../style.css';
 
 function LogementHeader({ currentApartment }) {
-      // host.name is split in an array called "name"
+      // host.name est divisé dans un tableau appelé "name"
       const name = currentApartment.host.name.split(' ');
 
   return (
-      // -iteration with "map" on the tags and return, for each tag, a span element
-      // -a key is needed to identify uniquely an element in the list
+      // Itération avec "map" sur les balises et renvoie, pour chaque balise, un élément span
+      // Une clé est nécessaire pour identifier de manière unique un élément dans la liste
       <div className="logementHeader">
             <div className='logementTitle'>
                   <h1>{currentApartment.title}</h1>

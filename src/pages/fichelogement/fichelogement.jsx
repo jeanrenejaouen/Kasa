@@ -9,13 +9,13 @@ import '../../style.css'
 
 function Fichelogement() {
 
-    // Retrieve the id of the current Apartment
+    // Récupérer l'identifiant de l'appartement actuel
     const idLogement = useParams("id").id
 
-    // include in a table "currentApartment" only apartment with the id retrieved above 
+    // inclure dans un tableau "currentApartment" uniquement l'appartement avec l'identifiant récupéré ci-dessus 
     const currentApartment = Logements.filter(item => item.id === idLogement);
 
-    // if no apartment in the table "currentApartment", call component "Erreur"
+    // si aucun appartement dans la table "currentApartment", appelez le composant "Erreur"
     if (currentApartment.length === 0) {
         return (
             <Erreur />
@@ -23,7 +23,7 @@ function Fichelogement() {
     }
 
     return (
-        // call the 3 components to build the "fichelogement"
+        // appeler les 3 composants pour construire la "fichelogement"
         <div className="ficheLogement">
             <LogementSlideShow pictures={currentApartment[0].pictures} numberPhotos={currentApartment[0].pictures.length} />
             <LogementHeader currentApartment={currentApartment[0]} />

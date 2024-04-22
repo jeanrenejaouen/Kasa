@@ -4,8 +4,8 @@ import '../../style.css'
 
 function Fichelogementdescription ({ currentApartment }) {
     return (
-        // -render 2 collapse (Description and Equipment) by calling the component "collase" twice
-        // -a line <li> is created for each piece of equipment
+        // Retourne 2 collapses (Description et Équipement) en appelant deux fois le composant "collapse"
+        // Une ligne <li> est créée pour chaque équipement
         <div className='ficheLogementDescription'>
                 <div className="ficheLogemenDropdown">
                     <Collapse title="Description" content={currentApartment.description} />

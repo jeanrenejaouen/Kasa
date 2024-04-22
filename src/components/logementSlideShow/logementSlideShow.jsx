@@ -6,40 +6,40 @@ import '../../style.css'
 
 function SlideShow(props) {
 
-    // -slides contains all the pictures passed as property
+    // Slides contient toutes les images passées en propriété
     const slides = props.pictures
 
-    // -set up the state variable "currentIndex" to store the index of current slide
+    // configurer la variable d'état "currentIndex" pour stocker l'index de la diapositive en cours
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    // -isOneSlide is true if only there is only 1 slide in slides
+    // isOneSlide est vrai s'il n'y a qu'une seule diapositive dans les diapositives
     const isOneSlide = slides.length === 1
 
-    // function called by a clic on the left arrow
+    // fonction appelée par un clic sur la flèche gauche
     const goToPrevious = () => {
-        // -isFirstSlide is true if currentIndex = 0
+        // isFirstSlide est vrai si currentIndex = 0
         const isFirstSlide = currentIndex === 0
-        // -if the first slide is displayed : newIndex = index of the last slide 
-        // if not : newIndex = currentIndex - 1
+        // si la première slide est affichée : newIndex = index de la dernière slide 
+        // sinon : newIndex = currentIndex - 1
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1
-        // currentIndex is updated with the newIndex
+        // currentIndex est mis à jour avec le newIndex
         setCurrentIndex(newIndex)
     };
     
-    // function called by a clic on the right arrow
+    // fonction appelée par un clic sur la flèche droite
     const goToNext = () => {
-        // -isLastSlide is true if currentIndex = number of pictures - 1
+        // Si LastSlide est vrai si currentIndex = nombre d'images - 1
         const isLastSlide = currentIndex === slides.length - 1
-        // -if the last slide is displayed : newIndex = 0 
-        // if not : newIndex = currentIndex + 1
+        // si la dernière slide est affichée : newIndex = 0
+        // sinon : newIndex = currentIndex + 1
         const newIndex = isLastSlide ? 0 : currentIndex + 1
-        // currentIndex is updated with the newIndex
+        // currentIndex est mis à jour avec le newIndex
         setCurrentIndex(newIndex)
     };
       
     return (
-        // -the image displayed is the one identified by currenIndex
-        // -the arrows and the counter are displayed only if there are more than 1 slide in slides
+        // L'image affichée est celle identifiée par currentIndex
+        // Les flèches et le compteur s'affichent uniquement s'il y a plus d'une diapositive dans le carroussel
         <div className="sliderStyle">
             <div className='slideStyle'>
                 <img src={slides[currentIndex]} alt="Slide"></img>
