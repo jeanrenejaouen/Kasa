@@ -7,6 +7,7 @@ import Erreur from '../pages/erreur/erreur.jsx'
 import Header from './header/header'
 import Footer from './footer/footer'
 
+
 function Router() {
     return (
         <BrowserRouter>
@@ -15,8 +16,7 @@ function Router() {
                 <Routes>
                     <Route path="/" element={<Accueil />} />
                     <Route path="/apropos" element={<Apropos />} />
-                    <Route path="/fichelogement/:id" element={<Fichelogement />} />
-                    {/* Si url différent des trois premiers, Affichage page "erreur" */}
+                    <Route path="/fichelogement/:id" element={<Fichelogement />} />                    
                     <Route path="*" element={<Erreur />} />                   
                 </Routes>
             </main>

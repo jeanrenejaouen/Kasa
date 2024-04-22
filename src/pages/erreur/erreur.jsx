@@ -1,10 +1,21 @@
 import React from "react"
+/* useNavigate hook est une nouvelle direction pour le routage dans React */
+/* Je l'utilise en remplacement de Navlink */
+import { useNavigate } from 'react-router-dom'
+import '../../style.css'
 
 function Erreur() {
-    return (
-        <div>
-            <h1>Page Erreur</h1>
-        </div>
+    const navigate = useNavigate()
+  return (
+    <div className="error">
+      <h1 className="error-title">{404}</h1>
+      <h2 className="error-subtitle">
+        Oups! La page que vous demandez n'existe pas.
+      </h2>
+      <h3 className="error-link" onClick={() => navigate("/")}>
+        Retourner sur la page d'accueil
+      </h3>
+    </div>
     )
   }
   

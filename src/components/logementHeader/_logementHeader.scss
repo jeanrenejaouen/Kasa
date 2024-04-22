@@ -1,0 +1,60 @@
+.logementHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	animation: fadein 1.5s;
+}
+.logementTitle h1 {
+	font-weight: 500;
+	font-size: 36px;
+	padding-right: 10px;
+}
+.logementTitle p {
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 3px;
+	margin-bottom: 20px;
+}
+.logementTags {
+	display: flex;
+	gap: 10px;
+	span {
+		background-color: #ff6060;
+		color: white;
+		padding: 3px 16px;
+		border-radius: 10px;
+		font-size: 14px;
+	}
+}
+.logementOwner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.logementOwnerDetails {
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+	gap: 5px;
+	h3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-weight: 500;
+	}
+}
+.logementOwnerBadge img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+.logementOwnerStars {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 36px;
+	color: #E3E3E3;
+	.on {
+		color: #ff6060;
+	}
+}
