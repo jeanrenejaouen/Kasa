@@ -1,6 +1,7 @@
 import React from "react"
 import { useParams } from 'react-router-dom'
-import Logements from '../../data/fiches-logement.json'
+/* import Logements from '../../data/fiches-logement.json' */
+import { useFetchData } from "../../hookFetch/useFetchData.js"
 import LogementHeader from '../../components/logementHeader/logementHeader.jsx'
 import LogementSlideShow from '../../components/logementSlideShow/logementSlideShow.jsx'
 import LogementDescription from '../../components/logementDescription/logementDescription.jsx'
@@ -9,6 +10,8 @@ import '../../style.css'
 
 function Fichelogement() {
 
+    const Logements = useFetchData(`/fiches-logement.json`)
+    
     // Récupérer l'identifiant de l'appartement actuel
     const idLogement = useParams("id").id
 
