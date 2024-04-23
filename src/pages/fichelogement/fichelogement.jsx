@@ -28,7 +28,7 @@ function Fichelogement() {
     return (
         // appeler les 3 composants pour construire la "fichelogement"
         <div className="ficheLogement">
-            <LogementSlideShow pictures={currentApartment[0].pictures} numberPhotos={currentApartment[0].pictures.length} />
+            <LogementSlideShow pictures={currentApartment[0].pictures} />
             <LogementHeader currentApartment={currentApartment[0]} />
             <LogementDescription currentApartment={currentApartment[0]} />
         </div>

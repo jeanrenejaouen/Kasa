@@ -508,21 +508,9 @@ main {
 .rightArrowStyle {
   right: 23px;
 }
-@media (width <= 450px) {
-  .rightArrowStyle {
-    width: 24px;
-    height: 24px;
-  }
-}
 
 .leftArrowStyle {
   left: 23px;
-}
-@media (width <= 450px) {
-  .leftArrowStyle {
-    width: 24px;
-    height: 24px;
-  }
 }
 
 .slideCounter {
