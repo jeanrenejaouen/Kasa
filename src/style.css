@@ -164,11 +164,13 @@ main {
 }
 
 .collapseExpand {
+  height: 180px;
   transition-property: height;
   transition-duration: 0.3s;
   overflow: hidden;
 }
 .collapseExpand p {
+  height: 180px;
   font-size: 18px;
   font-weight: 400;
   color: black;
@@ -176,6 +178,7 @@ main {
   background-color: #F6F6F6;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  overflow-y: auto;
 }
 
 .aproposDescription {

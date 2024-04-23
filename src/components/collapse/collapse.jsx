@@ -37,7 +37,7 @@ function Collapse(props) { /* arguments obtenus des composants parents */
                 {isExpanded ? <img src={arrowBack} alt="Chevron down"></img> : <img className= "rotate" src={arrowBack} alt="Chevron up"></img>}
             </div>
         </div>
-        <div className="collapseExpand" style={{ height: isExpanded ? height : 0 }}>
+        <div className="collapseExpand" style={{ height: isExpanded  ? height : 0 }}>         
             <p ref={ref}>{props.content}</p>
         </div>
     </>
