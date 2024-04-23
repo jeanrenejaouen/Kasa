@@ -6,7 +6,10 @@
 	border-radius: 10px;
 	margin-top: 30px;
 	padding: 10px 0;
-	
+	@media (width <= 450px) {		
+			padding: 5px 0;
+			border-radius: 5px;
+		}
 	img {
 		width: 25px;
 		margin-right: 20px;
@@ -14,6 +17,9 @@
 		filter: brightness(0) invert(1);
 		transition: transform 0.3s linear;
 		cursor: pointer;
+		@media (width <= 450px) {		
+			width: 16px;
+		}
 	}
 	.rotate {
 		transform: rotate(180deg);
@@ -22,6 +28,9 @@
 		font-size: 24px;
 		color: white;
 		padding: 0 15px;
+		@media (width <= 450px) {		
+			font-size: 13px;
+		}
 	}
 }
 .collapseExpand {
@@ -39,5 +48,8 @@
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		overflow-y: auto;
+		@media (width <= 450px) {
+			font-size: 12px;
+		}
 	}
 }

@@ -3,11 +3,22 @@
 	flex-direction: row;
 	justify-content: space-between;
 	animation: fadein 1.5s;
+	@media (width <= 768px) {		
+			display:flex;
+			flex-direction: column;
+		}
 }
 .logementTitle h1 {
 	font-weight: 500;
 	font-size: 36px;
 	padding-right: 10px;
+	@media (width <= 768px) {		
+		font-size: 25px;
+        padding-bottom: 5px;
+	}
+	@media (width <= 450px) {		
+			font-size: 18px;
+		}
 }
 .logementTitle p {
 	font-weight: 500;
@@ -15,6 +26,9 @@
 	font-size: 18px;
 	margin-top: 3px;
 	margin-bottom: 20px;
+	@media (width <= 450px) {		
+		font-size: 14px;
+	}
 }
 .logementTags {
 	display: flex;
@@ -25,29 +39,47 @@
 		padding: 3px 16px;
 		border-radius: 10px;
 		font-size: 14px;
+		@media (width <= 768px) {		
+			font-size: 10px;
+		}
 	}
 }
 .logementOwner {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	@media (width <= 768px) {		
+		display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+	}
 }
 .logementOwnerDetails {
 	display: flex;
 	justify-content: space-between;
 	text-align: right;
 	gap: 5px;
+	@media (width <= 450px) {		
+		margin-top: 10px;
+	}
 	h3 {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		font-weight: 500;
+		@media (width <= 450px) {		
+			font-size: 12px;
+		}
 	}
 }
 .logementOwnerBadge img {
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
+	@media (width <= 450px) {		
+		width: 32px;
+        height: 32px;
+	}
 }
 .logementOwnerStars {
 	display: flex;
@@ -55,6 +87,10 @@
 	align-items: center;
 	font-size: 36px;
 	color: #E3E3E3;
+	@media (width <= 450px) {		
+		font-size: 18px;
+        margin-top: 10px;
+	}
 	.on {
 		color: #ff6060;
 	}

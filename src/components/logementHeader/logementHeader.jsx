@@ -30,7 +30,7 @@ function LogementHeader({ currentApartment }) {
                   </div>
                   <div className='logementOwnerStars'>
                          {[1,2,3,4,5].map((num) => (
-                              <span key={num} className={currentApartment.rating >= num ? "on" : ""}>★</span>
+                              <span key={num} className={currentApartment.rating >= num ? "on" : ""}>★</span>                        
                          ))}
                   </div>
             </div>

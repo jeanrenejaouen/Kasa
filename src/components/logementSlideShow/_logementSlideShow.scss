@@ -3,6 +3,12 @@
 	height: 415px;
 	margin-bottom: 30px;
 	position: relative;
+	@media (width <= 768px) {		
+			height: 340px;
+		}
+	@media (width <= 450px) {		
+			height: 255px;
+		}
 }
 .slideStyle {
 	width: 100%;
@@ -16,6 +22,9 @@
 		height: 100%;
 		object-fit: cover;
 		border-radius: 25px;
+		@media (width <= 450px) {		
+			border-radius: 10px;
+		}
 	}
 }
 .arrowStyle {
@@ -27,12 +36,17 @@
 	z-index: 1;
 	cursor: pointer;
 	filter: brightness(0) invert(1);
+	@media (width <= 450px) {		
+		width: 12px;
+        height: 20px;
+        top: 45%;
+	}
 }
 .rightArrowStyle {
-	right: 23px;
+	right: 23px;	
 }
 .leftArrowStyle {
-	left: 23px;
+	left: 23px;	
 }
 .slideCounter {
 	position: absolute;
@@ -40,4 +54,7 @@
 	left: 50%;
 	bottom: 20px;
 	color: white;
+	@media (width <= 450px) {		
+		display: none;
+	}
 }

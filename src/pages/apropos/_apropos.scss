@@ -10,4 +10,10 @@
 	.aproposDropdown {
 		width: 100%;
 	}
+	@media (width <= 1000px) {		
+			padding-inline: 50px;	
+	}	
+	@media (width <= 768px) {		
+			padding-inline: 0;	
+	}
 }
