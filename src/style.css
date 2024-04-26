@@ -300,14 +300,14 @@ main {
   }
 }
 
-.collapseExpand {
-  max-height: 182px;
+.collapseExpandOn {
+  min-height: 182px;
   transition-property: height;
   transition-duration: 0.3s;
   overflow: hidden;
 }
-.collapseExpand p {
-  height: 182px;
+.collapseExpandOn p {
+  min-height: 182px;
   font-size: 18px;
   font-weight: 400;
   color: black;
@@ -318,9 +318,17 @@ main {
   overflow-y: auto;
 }
 @media (width <= 450px) {
-  .collapseExpand p {
+  .collapseExpandOn p {
     font-size: 12px;
   }
+}
+
+.collapseExpandOff {
+  height: 0;
+}
+.collapseExpandOff p {
+  height: 0;
+  overflow: hidden;
 }
 
 .aproposDescription {
@@ -420,7 +428,7 @@ main {
 
 .ficheLogementDescription p {
   padding-left: 10px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   background-color: #F6F6F6;
   border-radius: 0 0 10px 10px;
 }

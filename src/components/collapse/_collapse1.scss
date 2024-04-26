@@ -33,13 +33,13 @@
 		}
 	}
 }
-.collapseExpandOn {
-	min-height: 182px;
+.collapseExpand {
+	/* height: 182px; */
 	transition-property: height;
 	transition-duration: 0.3s;
 	overflow: hidden;		
 	p {
-		min-height: 182px;
+		/* height: 182px; */
 		font-size: 18px;
 		font-weight: 400;
 		color: black;
@@ -51,12 +51,5 @@
 		@media (width <= 450px) {
 			font-size: 12px;
 		}
-	}
-}
-.collapseExpandOff {
-	height: 0;
-	p {
-		height: 0;
-		overflow: hidden;	
 	}
 }

@@ -38,7 +38,7 @@ function Collapse(props) { /* arguments obtenus des composants parents */
             </div>
         </div>
 
-        <div className={isExpanded ? 'collapseExpandOn' : 'collapseExpandOff'}>
+        <div className="collapseExpand" style={{ height: isExpanded ? height : 0 }}>
             <p ref={ref}>{props.content}</p>
         </div>
     </>
@@ -46,3 +46,4 @@ function Collapse(props) { /* arguments obtenus des composants parents */
 };
 
 export default Collapse
+
