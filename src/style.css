@@ -301,13 +301,13 @@ main {
 }
 
 .collapseExpandOn {
-  min-height: 182px;
+  max-height: 238px;
   transition-property: height;
   transition-duration: 0.3s;
   overflow: hidden;
 }
 .collapseExpandOn p {
-  min-height: 182px;
+  max-height: 238px;
   font-size: 18px;
   font-weight: 400;
   color: black;
@@ -505,10 +505,16 @@ main {
   cursor: pointer;
   filter: brightness(0) invert(1);
 }
+@media (width <= 768px) {
+  .arrowStyle {
+    width: 30px;
+    height: 40px;
+  }
+}
 @media (width <= 450px) {
   .arrowStyle {
-    width: 12px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     top: 45%;
   }
 }
@@ -516,9 +522,19 @@ main {
 .rightArrowStyle {
   right: 23px;
 }
+.rightArrowStyle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .leftArrowStyle {
   left: 23px;
+}
+.leftArrowStyle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slideCounter {

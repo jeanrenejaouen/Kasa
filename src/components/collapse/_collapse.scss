@@ -34,12 +34,12 @@
 	}
 }
 .collapseExpandOn {
-	min-height: 182px;
+	max-height: 238px;
 	transition-property: height;
 	transition-duration: 0.3s;
 	overflow: hidden;		
 	p {
-		min-height: 182px;
+		max-height: 238px;
 		font-size: 18px;
 		font-weight: 400;
 		color: black;
