@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style.css';
+import './_logementHeader.scss';
 
 function LogementHeader({ currentApartment }) {
       // host.name est divisé dans un tableau appelé "name"

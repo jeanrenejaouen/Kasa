@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import ArrowLeft from '../../assets/icons/arrow-left.svg'
 import ArrowRight from '../../assets/icons/arrow-right.svg'
-import '../../style.css'
+import './_logementSlideShow.scss'
 
 function SlideShow(props) {
 

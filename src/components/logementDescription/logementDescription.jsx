@@ -1,6 +1,6 @@
 import React from 'react'
 import Collapse from '../../components/collapse/collapse.jsx';
-import '../../style.css'
+import './_logementDescription.scss'
 
 function Fichelogementdescription ({ currentApartment }) {
     return (

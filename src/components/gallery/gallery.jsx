@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 import { useFetchData } from "../../hookFetch/useFetchData.js"
 /* import Logements from '../../data/fiches-logement.json' */
 import Card from '../card/card'
-import '../../style.css'
+import './_gallery.scss'
 
 function Gallery() {
 

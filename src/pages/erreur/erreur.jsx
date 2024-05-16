@@ -2,7 +2,7 @@ import React from "react"
 /* Le hook useNavigate est une nouvelle direction pour le routage dans React */
 /* Je l'utilise en remplacement de Navlink */
 import { useNavigate } from 'react-router-dom'
-import '../../style.css'
+import './_erreur.scss'
 
 function Erreur() {
     const navigate = useNavigate()

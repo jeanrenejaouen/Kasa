@@ -4,7 +4,7 @@ import AproposImage from '../../assets/images/A_propos_image.jpg'
 /* import Collapses from "../../data/collapses.json" */
 import { useFetchData } from "../../hookFetch/useFetchData.js"
 import Collapse from '../../components/collapse/collapse.jsx'
-import '../../style.css'
+import './_apropos.scss'
 
 function Apropos() {
 

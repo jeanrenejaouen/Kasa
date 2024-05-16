@@ -1,5 +1,5 @@
 import React from "react"
-import '../../style.css'
+import './_card.scss'
 
 function Card ({image, title}) {
     return (

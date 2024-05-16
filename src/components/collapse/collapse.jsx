@@ -1,7 +1,7 @@
 import React from "react"
 import { useRef, useEffect, useState } from "react"
 import arrowBack from '../../assets/icons/arrow_back.svg'
-import '../../style.css'
+import './_collapse.scss'
 
 function Collapse(props) { /* arguments obtenus des composants parents */
 /* configurez la variable d'état "isExpanded" pour enregistrer si le collapse est développé ou non */
