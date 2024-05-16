@@ -22,7 +22,7 @@
 		}
 	}
 	.rotate {
-		transform: rotate(180deg);
+		transform: rotate(180deg);				
 	}
 	h2 {
 		font-size: 24px;
@@ -34,9 +34,8 @@
 	}
 }
 .collapseExpandOn {
-	max-height: 238px;
-	transition-property: height;
-	transition-duration: 0.3s;
+	max-height: 238px;			
+	transition: transform 0.3s linear;
 	overflow: hidden;		
 	p {
 		max-height: 238px;
@@ -48,15 +47,15 @@
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		overflow-y: auto;
+				
 		@media (width <= 450px) {
 			font-size: 12px;
 		}
 	}
 }
-.collapseExpandOff {
-	height: 0;
+.collapseExpandOff {	 
 	p {
 		height: 0;
-		overflow: hidden;	
+		overflow: hidden;			
 	}
 }
