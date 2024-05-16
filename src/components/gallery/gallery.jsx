@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom"
 import { useFetchData } from "../../hookFetch/useFetchData.js"
 /* import Logements from '../../data/fiches-logement.json' */
 import Card from '../card/card'
-import '../../style.css'
+/* import '../../style.css' */
+import './_gallery.scss'
 
 function Gallery() {
 
@@ -18,8 +19,7 @@ function Gallery() {
         <div className="gallery">
             {Logements.map((logement) => (
                
-                    <article key={logement.id}>
-                        {/* <NavLink to={`/fichelogement/${logement.id}`}> */}
+                    <article key={logement.id}>                        
                         <NavLink to={`/fichelogement/${logement.id}`}>
                             <Card image={logement.cover} title={logement.title} />
                         </NavLink>

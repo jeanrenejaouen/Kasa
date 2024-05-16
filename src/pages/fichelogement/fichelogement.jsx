@@ -6,7 +6,8 @@ import LogementHeader from '../../components/logementHeader/logementHeader.jsx'
 import LogementSlideShow from '../../components/logementSlideShow/logementSlideShow.jsx'
 import LogementDescription from '../../components/logementDescription/logementDescription.jsx'
 import Erreur from '../../pages/erreur/erreur.jsx'
-import '../../style.css'
+/* import '../../style.css' */
+import './_fichelogement.scss'
 
 function Fichelogement() {
 

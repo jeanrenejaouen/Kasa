@@ -35,10 +35,14 @@
 }
 .collapseExpandOn {
 	max-height: 238px;
-	transition-property: height;
-	transition-duration: 0.3s;
-	overflow: hidden;		
-	p {
+	transform-origin: top;	
+	transition: transform 0.3s linear;
+	transform: scaleY(100%);
+	/* transition-property: height;
+	transition-duration: 0.3s; */
+	overflow: hidden;
+			
+	p {					
 		max-height: 238px;
 		font-size: 18px;
 		font-weight: 400;
@@ -48,13 +52,18 @@
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		overflow-y: auto;
+		
+		
 		@media (width <= 450px) {
 			font-size: 12px;
 		}
-	}
+			
+	}	
 }
 .collapseExpandOff {
-	height: 0;
+	/* height: 0; */
+	transition: transform 0.3s linear;
+	transform: scaleY(0%);
 	p {
 		height: 0;
 		overflow: hidden;	

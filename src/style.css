@@ -302,8 +302,11 @@ main {
 
 .collapseExpandOn {
   max-height: 238px;
-  transition-property: height;
-  transition-duration: 0.3s;
+  transform-origin: top;
+  transition: transform 0.3s linear;
+  transform: scaleY(100%);
+  /* transition-property: height;
+  transition-duration: 0.3s; */
   overflow: hidden;
 }
 .collapseExpandOn p {
@@ -324,7 +327,9 @@ main {
 }
 
 .collapseExpandOff {
-  height: 0;
+  /* height: 0; */
+  transition: transform 0.3s linear;
+  transform: scaleY(0%);
 }
 .collapseExpandOff p {
   height: 0;
