@@ -8,6 +8,9 @@
 	align-items: center;
 	padding-top: 65px;
 	padding-bottom: 30px;
+	@media (width <= 450px) {		
+			padding-bottom: 65px;
+		}
 	img {
 		width: 122px;
 		height: 40px;
@@ -15,5 +18,10 @@
 	}
 	.copyright {
 		font-size: 24px;
+		@media (width <= 450px) {		
+			font-size: 12px;
+			width: 134px;
+			text-align: center;
+		}
 	}
 }

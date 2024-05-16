@@ -1,11 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Accueil from '../pages/accueil'
-import Apropos from '../pages/apropos'
-import Fichelogement from '../pages/fichelogement'
-import Erreur from '../pages/erreur'
-import Header from './header'
-import Footer from './footer'
+import Accueil from '../pages/accueil/accueil.jsx'
+import Apropos from '../pages/apropos/apropos.jsx'
+import Fichelogement from '../pages/fichelogement/fichelogement.jsx'
+import Erreur from '../pages/erreur/erreur.jsx'
+import Header from './header/header'
+import Footer from './footer/footer'
+
 
 function Router() {
     return (
@@ -15,7 +16,7 @@ function Router() {
                 <Routes>
                     <Route path="/" element={<Accueil />} />
                     <Route path="/apropos" element={<Apropos />} />
-                    <Route path="/fichelogement/:id" element={<Fichelogement />} />
+                    <Route path="/fichelogement/:id" element={<Fichelogement />} />                    
                     <Route path="*" element={<Erreur />} />                   
                 </Routes>
             </main>

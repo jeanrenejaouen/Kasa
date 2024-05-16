@@ -1,0 +1,19 @@
+.ficheLogementDescription {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 40px;
+	animation: fadein 2s;
+	@media (width <= 768px) {		
+			display: flex;
+			flex-direction: column;
+		}
+}
+.ficheLogemenDropdown {
+	width: 48%;
+	list-style: none;
+	@media (width <= 768px) {		
+		width: 100%;
+	}
+}
