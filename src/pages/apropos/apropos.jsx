@@ -15,6 +15,9 @@ function Apropos() {
         <Banner image={AproposImage} altText="Banner" text=""/> 
         <div className="aproposDescription">
           <div className="aproposDropdown">
+
+            {/* Itérer, lister les éléments à partir du fichier collapse.json */}
+            {/* retourne dans le composant collapse content et title d'après l'id */}
             {Collapses.map((item) => {
                 return <Collapse key={item.id} content={item.content} title={item.title} />
                 })}
